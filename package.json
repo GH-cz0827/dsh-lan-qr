@@ -1,0 +1,68 @@
+{
+  "name": "dsh-lan-qr",
+  "version": "1.0.0",
+  "description": "Phone-pairing QR button for the DeepSeek Harness Web UI: shows the current LAN URL as a scannable QR right next to the window-menu controls.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./assets/icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets/icon.svg",
+    "assets/qrcode.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "THIRD-PARTY-NOTICES.md",
+    "LICENSE"
+  ],
+  "icon": "assets/icon.svg",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "harness-plugin",
+    "qr",
+    "lan",
+    "mobile",
+    "pairing",
+    "remote-access"
+  ],
+  "license": "MIT",
+  "author": "GH-cz0827",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GH-cz0827/dsh-lan-qr.git"
+  },
+  "homepage": "https://github.com/GH-cz0827/dsh-lan-qr#readme",
+  "bugs": {
+    "url": "https://github.com/GH-cz0827/dsh-lan-qr/issues"
+  },
+  "scripts": {
+    "pack": "npm pack",
+    "index": "node tools/build-index.mjs"
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.0-rc.1 <0.3.0-0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ]
+    }
+  }
+}

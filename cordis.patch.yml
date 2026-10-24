@@ -1,0 +1,5 @@
+# dsh bundle patch: inserts this bundle's single plugin row.
+# Installed by `dsh plugin install` / plugin_manager install_bundle / dshmarket.
+- insert:
+    - id: lan-qr
+      name: 'dsh-lan-qr'

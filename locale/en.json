@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "LAN Pairing QR",
+    "description": "Adds a QR button to the window-menu row that shows the current LAN address, so a phone can pair by scanning it."
+  }
+}
