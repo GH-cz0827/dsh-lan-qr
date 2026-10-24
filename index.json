@@ -44,7 +44,7 @@
         "zh": "扫码局域网连接"
       },
       "description": {
-        "en": "Phone-pairing QR button for the DeepSeek Harness Web UI: shows the current LAN URL as a scannable QR right next to the window-menu controls.",
+        "en": "Phone-pairing QR button for the DeepSeek Harness desktop app: shows the launch's live LAN URL as a scannable QR right next to the window-menu controls.",
         "zh": "在窗口菜单行加一个二维码按钮，显示当前局域网地址，手机扫码即可配对连接。"
       },
       "icon": "assets/icon.svg",
@@ -68,12 +68,12 @@
       },
       "versions": [
         {
-          "version": "1.0.1",
-          "publishTimestamp": 1792846496,
+          "version": "1.0.2",
+          "publishTimestamp": 1792846760,
           "source": {
             "type": "git",
             "url": "https://github.com/GH-cz0827/dsh-lan-qr",
-            "commit": "9bf1f661c8112b9c692afddb2f43ab1234c6746c"
+            "commit": "803a7414f4818a8609ffd672399a1bee318cf39f"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.1 <0.3.0-0"
