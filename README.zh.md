@@ -74,7 +74,7 @@ dsh-lan-qr/
 ├── lib/index.js              # 宿主半：/lan-qr/state + 二维码 SVG + 图标
 ├── lib/client.js             # 浏览器半：按钮 + 卡片
 ├── assets/qrcode.js          # vendored qrcode-generator 1.4.4（MIT）
-├── assets/icon.svg           # 自绘图标（MIT）
+├── assets/icon.svg           # 按钮与插件列表用的二维码图标
 ├── locale/{en,zh}.json       # meta.title / meta.description
 ├── THIRD-PARTY-NOTICES.md
 └── tools/build-index.mjs     # 生成 index.json（市场 format 1 索引）

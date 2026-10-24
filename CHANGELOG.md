@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.2 — 2026-10-24
+
+- Host: dropped the absolute `C:\Users\...` icon candidate. The button now reads
+  `$DSH_LAN_QR_ICON` or the glyph shipped in `assets/icon.svg`, so the package is
+  machine-independent again.
+- Docs: the English README and the manifest description now say **desktop app**
+  instead of "Web UI", matching what the plugin actually needs (the desktop
+  host's pairing file and the live `connection` token).
+- Docs: the icon's provenance note no longer claims it was drawn for this
+  package.
+
 ## 1.0.1 — 2026-10-24
 
 Live-token and stale-address fixes.

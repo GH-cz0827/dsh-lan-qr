@@ -2,9 +2,9 @@
 
 [中文](README.zh.md) | English
 
-A DeepSeek Harness (dsh) bundle that adds a **pairing QR button** to the Web UI's
-window-menu row. Click it and a small card shows the LAN address of this harness
-as a scannable QR — pair a phone without typing an IP.
+A DeepSeek Harness (dsh) bundle that adds a **pairing QR button** to the desktop
+app's window-menu row. Click it and a small card shows the LAN address of this
+harness as a scannable QR — pair a phone without typing an IP.
 
 It pairs naturally with [dsh-refresh-button](https://github.com/GH-cz0827/dsh-refresh-button):
 the QR control sits immediately right of the 「编辑」/`Edit` control, in the same row
@@ -80,7 +80,7 @@ dsh-lan-qr/
 ├── lib/index.js              # host half: /lan-qr/state + QR SVG + icon
 ├── lib/client.js             # browser half: button + card
 ├── assets/qrcode.js          # vendored qrcode-generator 1.4.4 (MIT)
-├── assets/icon.svg           # original artwork (MIT)
+├── assets/icon.svg           # QR glyph used by the button and the plugin list
 ├── locale/{en,zh}.json       # meta.title / meta.description
 ├── THIRD-PARTY-NOTICES.md
 └── tools/build-index.mjs     # generates index.json (market index, format 1)

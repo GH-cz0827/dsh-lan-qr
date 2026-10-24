@@ -13,4 +13,8 @@ notice above satisfies the attribution requirement.
 
 ## assets/icon.svg
 
-Original artwork drawn for this package; covered by the repository's MIT license.
+A generic "QR code / scan" glyph chosen by the maintainer for the toolbar button
+and the plugin list. It is not derived from `qrcode-generator`. If you fork this
+repository, replace it with artwork whose license you can vouch for, or point
+`$DSH_LAN_QR_ICON` at your own file — the button reads the asset, not any
+third-party source.
