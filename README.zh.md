@@ -2,7 +2,7 @@
 
 [English](README.md) | 中文
 
-给 DeepSeek Harness（dsh）Web UI 的**窗口菜单行**加一个**配对二维码按钮**。
+给 DeepSeek Harness（dsh）Desktop 的**窗口菜单行**加一个**配对二维码按钮**。
 点一下弹出小卡片，把当前局域网地址渲染成可扫描的二维码，手机扫码即可连接，
 不用手输 IP。
 
