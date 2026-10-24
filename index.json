@@ -68,12 +68,12 @@
       },
       "versions": [
         {
-          "version": "1.0.0",
-          "publishTimestamp": 1792845946,
+          "version": "1.0.1",
+          "publishTimestamp": 1792846496,
           "source": {
             "type": "git",
             "url": "https://github.com/GH-cz0827/dsh-lan-qr",
-            "commit": "d9d4f142e392d01c91bfac7a429a2523d62c09b4"
+            "commit": "9bf1f661c8112b9c692afddb2f43ab1234c6746c"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.1 <0.3.0-0"
