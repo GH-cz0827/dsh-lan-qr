@@ -1,6 +1,6 @@
 {
   "name": "dsh-lan-qr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Phone-pairing QR button for the DeepSeek Harness Web UI: shows the current LAN URL as a scannable QR right next to the window-menu controls.",
   "type": "module",
   "main": "lib/index.js",

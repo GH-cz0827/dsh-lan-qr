@@ -40,6 +40,18 @@ In the app: **Plugins → Add** with the repository URL, or dshmarket /
 plugin-manager. A local checkout installs with `plugin_manager install_bundle`
 (target: the package directory). Restart dsh once after installing.
 
+## Release assets
+
+Each GitHub Release carries two files:
+
+| Asset | What it is |
+|---|---|
+| `dsh-lan-qr-<version>.tgz` | The dsh bundle (npm-pack layout, what plugin_manager / dshmarket install). |
+| `DSHLan-debug.apk` | The Android client (`android/DSHLan-debug.apk`, debug build) that scans this QR and pairs over the LAN. |
+
+The APK lives in the repository only so the release workflow can attach it; it is
+not part of the npm artifact (`files` in `package.json` does not list `android/`).
+
 ## Host routes
 
 | Route | Purpose |

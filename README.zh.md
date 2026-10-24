@@ -35,6 +35,17 @@ dsh plugin install github:GH-cz0827/dsh-lan-qr
 应用内走 **插件 → 添加**（填仓库地址），或 dshmarket / 插件管理器。
 本地目录安装用 `plugin_manager install_bundle`（target 指向包目录），装完重启一次 dsh。
 
+## Release 产物
+
+每个 GitHub Release 带两个文件：
+
+| 产物 | 说明 |
+|---|---|
+| `dsh-lan-qr-<版本>.tgz` | dsh 插件包（npm pack 结构，plugin_manager / dshmarket 装的就是它） |
+| `DSHLan-debug.apk` | 安卓客户端（仓库内 `android/DSHLan-debug.apk`，debug 构建），扫码后走局域网配对 |
+
+APK 只放在仓库里供 release 流程挂载，不进 npm 包（`package.json` 的 `files` 不含 `android/`）。
+
 ## 宿主路由
 
 | 路由 | 用途 |

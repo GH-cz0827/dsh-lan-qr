@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.0.1 — 2026-10-24
+
+Live-token and stale-address fixes.
+
+- Host: the QR now asks the `connection` service for `authenticatedUrl()`, so it
+  carries **this launch's** token instead of the token written to the pairing
+  file at startup; the service is resolved without blocking registration (a 1s
+  fallback keeps the launch URL when `connection` never arrives).
+- Host: the address now prefers the origin the page is actually open on
+  (`source: 'request-host'`), then a live interface, then the file, and a
+  file-sourced token is re-pointed at the current origin — a changed IP no
+  longer yields a dead QR. The payload reports `hasToken`.
+- Client: the glyph is also inlined as a data URI, so the button still renders
+  before the host route exists.
+- Package icon replaced with the shipped QR glyph (`assets/icon.svg`).
+- Releases now also attach the Android client: `android/DSHLan-debug.apk` is
+  uploaded beside the tarball by `release.yml`.
+
 ## 1.0.0 — 2026-10-24
 
 First distributable release.

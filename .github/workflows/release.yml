@@ -39,7 +39,10 @@ jobs:
       - name: Upload to the release
         uses: softprops/action-gh-release@v2
         with:
-          files: '*.tgz'
+          # the plugin tarball plus the phone app the QR pairs with
+          files: |
+            *.tgz
+            android/*.apk
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
