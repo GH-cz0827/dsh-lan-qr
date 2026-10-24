@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "title": {
+    "en": "DSH Phone Pairing",
+    "zh": "DSH 手机配对"
+  },
+  "description": {
+    "en": "Pair a phone with a DeepSeek Harness instance by scanning its LAN address.",
+    "zh": "扫码连接：把 DeepSeek Harness 的局域网地址变成手机可扫的二维码。"
+  },
+  "metadata": {
+    "categories": {
+      "ui": {
+        "title": {
+          "en": "UI Enhancements",
+          "zh": "UI 增强"
+        }
+      },
+      "remote": {
+        "title": {
+          "en": "Remote & Mobile",
+          "zh": "远程与移动端"
+        }
+      },
+      "dev": {
+        "title": {
+          "en": "Development & Runtime",
+          "zh": "开发与运行时"
+        }
+      },
+      "tools": {
+        "title": {
+          "en": "Tools & Capabilities",
+          "zh": "工具与能力"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-lan-qr",
+      "title": {
+        "en": "LAN Pairing QR",
+        "zh": "扫码局域网连接"
+      },
+      "description": {
+        "en": "Phone-pairing QR button for the DeepSeek Harness Web UI: shows the current LAN URL as a scannable QR right next to the window-menu controls.",
+        "zh": "在窗口菜单行加一个二维码按钮，显示当前局域网地址，手机扫码即可配对连接。"
+      },
+      "icon": "assets/icon.svg",
+      "homepage": "https://github.com/GH-cz0827/dsh-lan-qr#readme",
+      "repository": {
+        "url": "https://github.com/GH-cz0827/dsh-lan-qr"
+      },
+      "metadata": {
+        "category": "remote",
+        "keywords": [
+          "dsh",
+          "dsh-plugin",
+          "deepseek-harness",
+          "harness-plugin",
+          "qr",
+          "lan",
+          "mobile",
+          "pairing",
+          "remote-access"
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1792845946,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/GH-cz0827/dsh-lan-qr",
+            "commit": "d9d4f142e392d01c91bfac7a429a2523d62c09b4"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.1 <0.3.0-0"
+          }
+        }
+      ]
+    }
+  ]
+}
